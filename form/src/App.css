@@ -1,0 +1,351 @@
+body {
+    /* background-color: rgb(215, 248, 248); */
+    background-image: url("https://images.hdqwalls.com/download/blue-sky-and-flower-ds-1920x1080.jpg");
+
+}
+.head{
+    background-image: url("");
+}
+.file_icon svg {
+    font-size: 3rem;
+    color: #1F6A8A;
+    font: bold
+}
+
+.Send {
+    background-color: #1F6A8A;
+    border-radius: 7px;
+}
+
+.qrs {
+    color:#1F6A8A ;
+}
+.preview{
+    border-bottom: 2px dotted  #fff;
+}
+.first_box {
+    border-top: 10px solid rgb(0, 188, 212);
+    border-radius: 10px;
+    border-left: 7px solid #4285f4;
+    background-color: #4285f4;
+}
+
+.untitle_form {
+    border-bottom: 1px solid rgb(147, 147, 147);
+    outline: none;
+    color: blue;
+    width: 96%;
+
+
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(119, 174, 180);
+}
+
+/* second div*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.buttons {
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.blob-btn {
+    z-index: 1;
+    position: relative;
+    padding: 20px 46px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(0, 188, 212);
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.blob-btn:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(0, 188, 212);
+    border-radius: 30px;
+}
+
+.blob-btn:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s 0.2s;
+    border-radius: 30px;
+}
+
+.blob-btn:hover {
+    color: #fff;
+    border-radius: 30px;
+}
+
+.blob-btn:hover:after {
+    transition: all 0.3s;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+
+.blob-btn__inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: #fff;
+}
+
+.blob-btn__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+    filter: url('#goo');
+}
+
+.blob-btn__blob {
+    position: absolute;
+    top: 2px;
+    width: 25%;
+    height: 100%;
+    background: rgb(0, 188, 212);
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.45s;
+}
+
+@supports (filter: url('#goo')) {
+    /* transform: translate3d(0, 150%, 0) scale(1.4); */
+}
+
+.blob-btn__blob:nth-child(1) {
+    left: 0%;
+    transition-delay: 0s;
+}
+
+.blob-btn__blob:nth-child(2) {
+    left: 30%;
+    transition-delay: 0.08s;
+}
+
+.blob-btn__blob:nth-child(3) {
+    left: 60%;
+    transition-delay: 0.16s;
+}
+
+.blob-btn__blob:nth-child(4) {
+    left: 90%;
+    transition-delay: 0.24s;
+}
+
+.blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.7);
+}
+
+@supports (filter: url('#goo')) {
+    /* transform: translateZ(0) scale(1.4); */
+}
+
+/* add option */
+.add_option {
+    /* margin-left: 154px; */
+    width: 145px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    /* font-family: 'Comfortaa', cursive; */
+    color: #3E8AA4;
+    font-size: 17px;
+    font:10px;
+    border-radius: 4px;
+    font-weight:400;
+    /* box-shadow: inset 15px 15px 10px rgba(63, 217, 228, 0.806), 10px 10px 10px rgba(127, 161, 202, 0.423); */
+    background: rgb(255, 255, 255);
+    /* background: linear-gradient(45deg, rgba(6, 149, 134, 0) 5%, rgba(240, 166, 224, 0.5) 6%, rgba(255, 255, 255, 0) 9%, rgba(18, 2, 2, 0.5) 10%, rgba(255, 255, 255, 0) 17%, rgba(50, 46, 46, 0.5) 19%, rgba(132, 246, 225, 0.157) 21%); */
+    /* background-size: 150%; */
+    background-position: right;
+    transition: 1s;
+}
+
+.add_option:hover {
+    /* background-position: left; */
+    color: rgb(255, 255, 255);
+    background: #3E8AA4;
+    /* background-size: 150%; */
+    /* box-shadow: inset 10px 10px 5px rgb(152, 188, 232), 5px 5px 5px rgb(63, 217, 228); */
+}
+
+.add_option:focus {
+    outline: none;
+}
+.add_question {
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    /* font-family: 'Comfortaa', cursive; */
+    color: #3E8AA4;
+    font-size: 20px;
+    font:10px;
+    border-radius: 4px;
+    font-weight:400;
+    /* box-shadow: inset 15px 15px 10px rgba(63, 217, 228, 0.806), 10px 10px 10px rgba(127, 161, 202, 0.423); */
+    background: rgb(255, 255, 255);
+    /* background: linear-gradient(45deg, rgba(6, 149, 134, 0) 5%, rgba(240, 166, 224, 0.5) 6%, rgba(255, 255, 255, 0) 9%, rgba(18, 2, 2, 0.5) 10%, rgba(255, 255, 255, 0) 17%, rgba(50, 46, 46, 0.5) 19%, rgba(132, 246, 225, 0.157) 21%); */
+    background-size: 150%;
+    background-position: right;
+    transition: 1s;
+}
+
+.add_question:hover {
+    /* background-position: left; */
+    color: rgb(255, 255, 255);
+    background: #3E8AA4;
+    /* background-size: 150%; */
+    /* box-shadow: inset 10px 10px 5px rgb(152, 188, 232), 5px 5px 5px rgb(63, 217, 228); */
+}
+
+.add_question:focus {
+    outline: none;
+}
+.add_question2 {
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    /* font-family: 'Comfortaa', cursive; */
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font:10px;
+    border-radius: 4px;
+    font-weight:400;
+    /* box-shadow: inset 15px 15px 10px rgba(63, 217, 228, 0.806), 10px 10px 10px rgba(127, 161, 202, 0.423); */
+    background: #1F6A8A;
+    /* background: linear-gradient(45deg, rgba(6, 149, 134, 0) 5%, rgba(240, 166, 224, 0.5) 6%, rgba(255, 255, 255, 0) 9%, rgba(18, 2, 2, 0.5) 10%, rgba(255, 255, 255, 0) 17%, rgba(50, 46, 46, 0.5) 19%, rgba(132, 246, 225, 0.157) 21%); */
+    background-size: 150%;
+    background-position: right;
+    transition: 1s;
+}
+
+.add_question2:hover {
+    /* background-position: left; */
+    color: #1F6A8A;
+    background: #ffffff;
+    background-size: 150%;
+    /* box-shadow: inset 10px 10px 5px rgb(152, 188, 232), 5px 5px 5px rgb(63, 217, 228); */
+}
+
+.add_question2:focus {
+    outline: none;
+}
+.add_question3{
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    /* font-family: 'Comfortaa', cursive; */
+    color: #3E8AA4;
+    font-size: 20px;
+    font:10px;
+    border-radius: 4px;
+    font-weight:400;
+    /* box-shadow: inset 15px 15px 10px rgba(63, 217, 228, 0.806), 10px 10px 10px rgba(127, 161, 202, 0.423); */
+    background: #ffffff;
+    /* background: linear-gradient(45deg, rgba(6, 149, 134, 0) 5%, rgba(240, 166, 224, 0.5) 6%, rgba(255, 255, 255, 0) 9%, rgba(18, 2, 2, 0.5) 10%, rgba(255, 255, 255, 0) 17%, rgba(50, 46, 46, 0.5) 19%, rgba(132, 246, 225, 0.157) 21%); */
+    background-size: 150%;
+    background-position: right;
+    transition: 1s;
+}
+
+.add_question3:hover {
+    /* background-position: left; */
+    color: #ffffff;
+    background: #1F6A8A;
+    background-size: 150%;
+    /* box-shadow: inset 10px 10px 5px rgb(152, 188, 232), 5px 5px 5px rgb(63, 217, 228); */
+}
+
+.add_question3:focus {
+    outline: none;
+}
+.submitdata{
+    color: #1F6A8A;
+    
+    border:2px solid #1F6A8A;
+    background-size: 150%;
+    /* background-color: #4CAF50;  */
+  
+}
+.submitdata:hover {
+    /* background-position: left; */
+    color: #ffffff;
+    background: #3a99c1;
+    background-size: 150%;
+    /* box-shadow: inset 10px 10px 5px rgb(152, 188, 232), 5px 5px 5px rgb(63, 217, 228); */
+}
+/*  */
+
+/*  */
+/* .first{
+    background-image:url( "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqh8ugwDpAFw6sGi5O-Pq7t2jEPg0eaC0KPmovS2rMjTxR4be4W6LVOAY4f2wd71WzHJQ&usqp=CAU");
+} */
+
+
+.question2{
+    /* background-color: rgb(248, 176, 247); */
+    border-radius: 10px;
+}
+.enter_question{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 4px solid #d8eba7;
+}
+select{
+    width: 100%;
+    /* padding: 12px 20px; */
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 4px solid #d8eba7;
+    color: rgb(83, 8, 8);
+}
+.q2{
+    border-style: solid;  
+    border-width:5px;  
+    border-radius: 10px;
+}
+.border1{
+    border: black;
+}
+/*  */
